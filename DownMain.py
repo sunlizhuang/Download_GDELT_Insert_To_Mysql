@@ -54,11 +54,76 @@ config = {'host': 'localhost',#change by youself
           }
 conn = pymysql.connect(**config)
 
+###create database and table
+# cur=conn.cursor()
+# cur.execute("create database GDELT_DATA")
+# cur.execute("use GDELT_DATA")
+# cur.execute("create table data(
+#     C1 varchar(100),
+#     C2 varchar(100),
+#     C3 varchar(100),
+#     C4 varchar(100),
+#     C5 varchar(100),
+#     C6 varchar(100),
+#     C7 varchar(100),
+#     C8 varchar(100),
+#     C9 varchar(100),
+#     C10 varchar(100),
+#     C11 varchar(100),
+#     C12 varchar(100),
+#     C13 varchar(100),
+#     C14 varchar(100),
+#     C15 varchar(100),
+#     C16 varchar(100),
+#     C17 varchar(100),
+#     C18 varchar(100),
+#     C19 varchar(100),
+#     C20 varchar(100),
+#     C21 varchar(100),
+#     C22 varchar(100),
+#     C23 varchar(100),
+#     C24 varchar(100),
+#     C25 varchar(100),
+#     C26 varchar(100),
+#     C27 varchar(100),
+#     C28 varchar(100),
+#     C29 varchar(100),
+#     C30 varchar(100),
+#     C31 varchar(100),
+#     C32 varchar(100),
+#     C33 varchar(100),
+#     C34 varchar(100),
+#     C35 varchar(100),
+#     C36 varchar(100),
+#     C37 varchar(100),
+#     C38 varchar(100),
+#     C39 varchar(100),
+#     C40 varchar(100),
+#     C41 varchar(100),
+#     C42 varchar(100),
+#     C43 varchar(100),
+#     C44 varchar(100),
+#     C45 varchar(100),
+#     C46 varchar(100),
+#     C47 varchar(100),
+#     C48 varchar(100),
+#     C49 varchar(100),
+#     C50 varchar(100),
+#     C51 varchar(100),
+#     C52 varchar(100),
+#     C53 varchar(100),
+#     C54 varchar(100),
+#     C55 varchar(100),
+#     C56 varchar(100),
+#     C57 varchar(100),
+#     C58 varchar(100)
+# )")
+
 
 for i in range(len(filePath)):
     cur = conn.cursor()
     data_sql = "LOAD DATA LOCAL INFILE '%s' INTO TABLE %s LINES TERMINATED BY '\n'"%(filePath[i],"GDELT_DATA.data")#change by youself
-    # "GDELT_DATA.data" GDELT_DATA is my database,data is a table in GDELT_DATA
+    # "GDELT_DATA.data" GDELT_DATA is database,data is a table in GDELT_DATA
     print(filePath[i]+"load_in_mysql_finished")
     cur.execute('SET NAMES utf8;')
     cur.execute('SET character_set_connection=utf8;')
