@@ -53,7 +53,6 @@ config = {'host': 'localhost',#change by youself
           'local_infile': 1
           }
 conn = pymysql.connect(**config)
-
 ###create database and table
 # cur=conn.cursor()
 # cur.execute("create database GDELT_DATA")
