@@ -1,10 +1,10 @@
 # Download_GDELT_Insert_To_Mysql
 
-Download GDELT csv.zip files    
-You can select the begin data and end data       
+Download GDELT csv.zip files.    
+You can select the begin data and end data.       
 Unzipping to csv files and put into ./data/   
-Write your own MySql username and pwd down to these code    
-you can insert these csv files to MySql database                    
+Write your own MySql username and pwd down to these code.    
+you can insert these csv files to MySql database.                    
 
 
 
