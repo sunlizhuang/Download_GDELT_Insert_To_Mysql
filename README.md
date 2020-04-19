@@ -14,9 +14,9 @@ you can insert these csv files to MySql database.
 将后面Insert进MySql的代码注释掉，就是直接下载.csv文件的代码   
 
 
-GDET.csvデータをダウンロードし、Mysqlデータベースに挿入します。　　　　
-開始日と終了日を選択できます。　　　　
-前提はあなたがMysqlでデータベースとテーブルを作って。　　　
+GDET.csvデータをダウンロードし、Mysqlデータベースに挿入します。　　　
+開始日と終了日を選択できます。　　　
+前提はあなたがMysqlでデータベースとテーブルを作って。　　　　
 Insert_to_MySqlはコードに注釈したら、そのままcsvファイルがダウンロードするのコードです。　　　　
 
 
