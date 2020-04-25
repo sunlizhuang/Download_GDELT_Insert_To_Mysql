@@ -1,4 +1,19 @@
 # Download_GDELT_Insert_To_Mysql
-下载GDELT.csv数据，并插入到Mysql数据库中。
-可以选择开始时间和结束时间。
-前提是你要在Mysql提前建好一个数据库和一张表，用来接收.csv数据
+
+Download GDELT csv.zip files.    
+You can select the begin date and end date.       
+Unzipping to csv files and put into ./data/   
+Write your own MySql username and pwd down to these code.    
+you can insert these csv files to MySql database.                    
+
+
+
+下载GDELT.csv数据，并插入到Mysql数据库中。   
+可以选择开始时间和结束时间。   
+前提是你要在Mysql提前建好一个数据库和一张表，用来接收.csv数据.   
+将后面Insert进MySql的代码注释掉，就是直接下载.csv文件的代码   
+
+
+GDET.csvデータをダウンロードし、Mysqlデータベースに挿入します。開始日と終了日を選択できます。前提はあなたがMysqlでデータベースとテーブルを作って。Insert_to_MySqlはコードに注釈したら、そのままcsvファイルがダウンロードするのコードです。　　　　
+
+
